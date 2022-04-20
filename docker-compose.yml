@@ -1,0 +1,13 @@
+services:
+    django: &django
+        user: django
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        env_file:
+            - envs/prod.env
+        command: "/run-django.sh"
+        ports:
+            - "80:8000"
+        volumes:
+            - ./source:/app

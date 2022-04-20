@@ -1,0 +1,9 @@
+# local dirs
+**/__pycache__/
+**/.idea/
+bench/
+
+# django dirs
+static/
+media/
+db.sqlite3
